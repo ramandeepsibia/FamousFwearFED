@@ -1,0 +1,126 @@
+/*** CSS Rules for General elements **/
+.action.primary {
+    background-image: none;
+    background: #fff;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 0px;
+}
+
+@media (min-width: 768px){
+
+    
+    /** Section: Top panel **/
+    .header.panel > .header.links > li > a {
+        color: #000;
+    }
+
+    ul.header.links {
+        color: #000;
+    }
+
+    .page-header .panel.wrapper {
+        background-color: #fff;
+    }
+    /** Section: Navigation **/
+    .navigation {
+        background: #fff;
+        font-weight: 400;
+        height: inherit;
+        left: auto;
+        overflow: inherit;
+        padding: 0;
+        position: relative;
+        top: 0;
+        width: 54%;
+        z-index: 3;
+        display: inline-block;
+        margin: 0px auto;
+        margin-left: 10%;
+        text-transform: uppercase;
+    }
+    /** Section: Promotions **/
+    .promotions li {
+        width: 33%;
+        display: inline-block;
+        padding-top: 15px;
+        color: #fff;
+    }
+    .promotions {
+        background: #363436;
+        margin-top: 2.5rem;
+        margin-bottom: 0px;
+    }
+
+    /** Section: Top 4 Featured products Home Page **/
+    .content-wrapper-home {
+        padding-top: 2.5rem;
+        width: 80%;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .promo-section li{
+        width:48%;
+        display: inline-block;
+        border:1px solid #ccc;
+        vertical-align: top;
+    }
+    .products-grid.grid {
+        margin: 0px auto;
+        text-align: center;
+    }
+    .content-heading:before{
+        background: none!important;
+    }
+    .page-header .panel.wrapper{
+        border-bottom: 0px; 
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    /*** Three promotional block ***/
+    .promotional-blocks li{
+        width: 33%;
+        display: inline-block;
+    }
+
+    .special-Promotional-Banner{
+        background: #F1F1F2;
+        padding: 50px 35px;
+        margin: 2.25rem;
+    }
+
+    .special-Promotional-Banner li{
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .special-Promotional-Banner li:first-child{ 
+        border-right: 1px solid #ccc;
+    }
+    .special-Promotional-Banner div{
+        float:left;
+    }
+
+    .special-Promotional-Banner div img{ 
+        width:40%;
+    }
+
+    .promotional-blocks-insta{
+        margin-top:2.25rem;    
+    }
+
+    .promotional-blocks-insta li{
+        width: 19%;
+        display: inline-block;
+    }
+
+    
+   
+}
+@media (max-width: 768px){
+    /** media queries for mobile **/
+    ol.product-items.widget-product-grid {
+        text-align: center;
+    }
+}
