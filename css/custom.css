@@ -1,36 +1,113 @@
+/*** Fonts : Famous Footwear ***/
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold/OpenSans-Bold.eot') format('embedded-opentype'), url('../fonts/OpenSans-Bold/OpenSans-Bold.ttf')  format('truetype'), url('../fonts/OpenSans-Bold/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans/OpenSans.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans.ttf')  format('truetype'), url('../fonts/OpenSans/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../fonts/OpenSans-Light/OpenSans-Light.eot') format('embedded-opentype'), url('../fonts/OpenSans-Light/OpenSans-Light.ttf')  format('truetype'), url('../fonts/OpenSans-Bold/OpenSans-Light.svg#OpenSans-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-BoldItalic';
+    src: url('../fonts/OpenSans-BoldItalic/OpenSans-BoldItalic.eot') format('embedded-opentype'), url('../fonts/OpenSans-BoldItalic/OpenSans-BoldItalic.ttf')  format('truetype'), url('../fonts/OpenSans-BoldItalic/OpenSans-BoldItalic.svg#OpenSans-BoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url('../fonts/OpenSans-Italic/OpenSans-Italic.eot') format('embedded-opentype'), url('../fonts/OpenSans-Italic/OpenSans-Italic.ttf')  format('truetype'), url('../fonts/OpenSans-Italic/OpenSans-Italic.svg#OpenSans-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansLight-Italic';
+    src: url('../fonts/OpenSansLight-Italic/OpenSansLight-Italic.eot') format('embedded-opentype'), url('../fonts/OpenSansLight-Italic/OpenSansLight-Italic.ttf')  format('truetype'), url('../fonts/OpenSansLight-Italic/OpenSansLight-Italic.svg#OpenSansLight-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-size: 100%;
+  
+    letter-spacing: 0.5px;
+}
+strong, h1, h2, h2, h3, h4, h5, h6{
+    font-family: 'OpenSans-Bold';
+}
+
 /*** CSS Rules for General elements **/
 .action.primary {
     background-image: none;
     background: #fff;
-    border: 1px solid #000;
-    color: #000;
+    border: 1px solid #363436;
+    color: #363436;
     border-radius: 0px;
 }
 
+h3 {
+    color: #9B7C75;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+body {
+    color: #363436;
+    font-family: OpenSans;
+}
+
 @media (min-width: 768px){
-    /** Section: Top panel **/
+    
     .header.content {
-        padding: 0px 20px 0;
+        padding-top:0px;
+    }
+
+    /** Section: Top panel **/
+    .navigation, .breadcrumbs, .page-header .header.panel, .header.content, .footer.content, .page-wrapper > .widget, .page-wrapper > .page-bottom, .block.category.event, .top-container, .page-main {
+        max-width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .header.panel > .header.links{
+        margin-right: 10px;
+    }
+    .page-header .header.panel{
+        padding-bottom: 0px;
+        padding-top: 20px;
+        vertical-align: bottom;
     }
     
     .header.panel > .header.links > li > a {
-        color: #000;
+        color: #363436;
+        font-size: 14px;
+        font-family: OpenSans;
     }
 
     ul.header.links {
-        color: #000;
+        color: #363436;
     }
 
-    ul.header.links img {
-        width: 70%;
-        margin-top: 3px;
-    }
     ul.header.links a {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     button.action.search img {
-        width: 75%;
+        width: 100%;
         margin-top: 12px;
     }
 
@@ -46,7 +123,7 @@
     }
 
     .block-search{
-        margin-top: 12px;
+        margin-top: 25px;
     }
 
     .page-header .panel.wrapper {
@@ -68,8 +145,11 @@
         margin: 0px auto;
         margin-left: 3%;
         text-transform: uppercase;
-        margin-top: 12px;
+        margin-top: 25px;
         font-size: 13px;
+    }
+    .navigation .level0 {
+        margin: 0 0px 0 0;
     }
     /** Section: Promotions **/
     .promotions li {
@@ -80,6 +160,7 @@
         border-right: 1px solid #fff;
         text-align: center;
         margin-bottom: 0px;
+        font-size: 13px;
         font-weight: 300;
     }
 
@@ -89,8 +170,9 @@
 
     .promotions {
         background: #363436;
-        margin-top: 0.5rem;
+        margin-top: 0px;
         margin-bottom: 0px;
+        padding-top: 0px;
     }
 
     /** Section: Top 4 Featured products Home Page **/
@@ -156,12 +238,115 @@
         display: inline-block;
     }
 
-    
+    /** Footer columns width desktop **/
+    ul.footer.links {
+        width: 15%;
+    }
+
+    ul.social-icons {
+        text-align: right;
+        padding-right: 0px!important;
+    }
+    li.social {
+        display: inline-block;
+        padding-left: 16px;
+    }
    
+}
+
+
+.navigation .level0 > .level-top{
+    color: #363436;
+    font-size: 14px;
+}
+
+/*** Footer CSS ***/
+.page-footer{
+    background: #f5f5f5;
+    border-bottom: 1px solid #c2c3c4;
+}
+.footer.content .links li {
+    line-height: 11px;
+}
+
+.footer.content .links a:visited {
+    color: #363436;
+}
+.footer.content .links a {
+    color: #363436;
+    font-size: 13px;
+}
+li.nav.item {
+    line-height: 12px;
+}
+
+/** Footer Newsletetr Block CSS **/
+.block.newsletter {
+    width: 25%;
+}
+.block.newsletter p {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.block.newsletter .field .control:before {
+    display: none;
+}
+.block.newsletter .action.subscribe {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -1px;
+    background: #E4B6AA;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 11px;
+}
+.block.newsletter input {
+    border: none;
+    height:40px;
+}
+
+/*** social icons footer **/
+.empty-space{
+    height:30px;
+}
+
+li.social {
+    display: inline-block;  
+}
+li.social img {
+    width: 80%;
+}
+
+/** copyright block css ***/
+
+.copyright{
+    background-color: #f5f5f5;
+    color: #363436;
+    padding: 20px 35px;
+    font-size: 11px;
+}
+.copyright-right{
+    float: right;
+}
+.copyright-left{
+    text-align: left; float: left;
 }
 @media (max-width: 768px){
     /** media queries for mobile **/
     ol.product-items.widget-product-grid {
         text-align: center;
+    }
+    ul li{
+        list-style-type: none;
+    }
+
+    .block.newsletter {
+        width: 100%;
+    }
+
+    nav.navigation {
+        display: none;
     }
 }
