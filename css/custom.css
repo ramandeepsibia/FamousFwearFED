@@ -56,9 +56,10 @@ strong, h1, h2, h2, h3, h4, h5, h6{
 .action.primary {
     background-image: none;
     background: #fff;
-    border: 1px solid #363436;
+    border: 2px solid #363436;
     color: #363436;
     border-radius: 0px;
+    font-weight:300;
 }
 
 h3 {
@@ -69,6 +70,16 @@ h3 {
 body {
     color: #363436;
     font-family: OpenSans;
+}
+
+a:visited, .alink:visited {
+    color: #363437;
+    text-decoration: none;
+}
+
+a, .alink {
+    color: #363436;
+    text-decoration: none;
 }
 
 @media (min-width: 768px){
@@ -153,7 +164,7 @@ body {
     }
     /** Section: Promotions **/
     .promotions li {
-        width: 33%;
+        width: 32%;
         display: inline-block;
         padding: 15px 0px;
         color: #fff;
@@ -175,28 +186,14 @@ body {
         padding-top: 0px;
     }
 
-    /** Section: Slider ***/
-    .slider-heading {
-        position: absolute;
-        top: 10%;
-        text-align: center;
-        left: 40%;
-        color: #fff;
-        font-size: 81px;
-    }
-    .slider-btn{
-        background: none;
-        border: 0px;
-        outline: none!important;
-        box-shadow: none!important;
-        border-right: 2px solid #fff;
-        border-left: 2px solid #fff;
-        border-radius: 0px;
-        color: #fff;
-        font-size: 21px;
-    }
+    
 
     /** Section: Top 4 Featured products Home Page **/
+
+    
+
+   
+
     .content-wrapper-home {
         padding-top: 2.5rem;
         width: 100%;
@@ -204,11 +201,23 @@ body {
         margin: 0px auto;
     }
     .promo-section li{
-        width:48%;
+       
         display: inline-block;
-        border:1px solid #ccc;
         vertical-align: top;
     }
+    .promo-section li.narrow {
+        width:30%;
+    }
+
+    .promo-section li.wide {
+        width:60%;
+    }
+
+    .block.widget.block-products-list.grid {
+        background: #f5f5f5;
+        padding-top: 20px;
+    }
+    
     .products-grid.grid {
         margin: 0px auto;
         text-align: center;
@@ -259,9 +268,14 @@ body {
         display: inline-block;
     }
 
+    /**instagram section ***/
+    .insta{
+        margin-top:30px;
+    }
+
     /** Footer columns width desktop **/
     ul.footer.links {
-        width: 15%;
+        width: 14%;
     }
 
     ul.social-icons {
@@ -279,6 +293,41 @@ body {
 .navigation .level0 > .level-top{
     color: #363436;
     font-size: 14px;
+}
+
+/** Section: Slider ***/
+.slider-heading {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    left: 40%;
+    color: #fff;
+    font-size: 81px;
+}
+.slider-btn{
+    background: none;
+    border: 0px;
+    outline: none!important;
+    box-shadow: none!important;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 21px;
+}
+/** Top 4 featured products homepage **/
+button.action.more {
+    background: none;
+    border: 2px solid #000;
+    padding: 20px 20px;
+    border-radius: 0px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    width: 180px;
+}
+.product-item-details img{
+    width:4%;
+    vertical-align: middle;
 }
 
 /*** Footer CSS ***/
@@ -369,5 +418,17 @@ li.social img {
 
     nav.navigation {
         display: none;
+    }
+    /*** 4 collections homepage ***/
+    ul.promo-section li {
+        display: none;
+    }
+
+    ul.promotional-blocks li {
+        text-align: center;
+    }
+
+    .insta {
+        text-align: center;
     }
 }
