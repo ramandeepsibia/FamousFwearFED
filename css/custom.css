@@ -1,55 +1,11 @@
 /*** Fonts : Famous Footwear ***/
-
-@font-face {
-    font-family: 'OpenSans-Bold';
-    src: url('../fonts/OpenSans-Bold/OpenSans-Bold.eot') format('embedded-opentype'), url('../fonts/OpenSans-Bold/OpenSans-Bold.ttf')  format('truetype'), url('../fonts/OpenSans-Bold/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSans';
-    src: url('../fonts/OpenSans/OpenSans.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans.ttf')  format('truetype'), url('../fonts/OpenSans/OpenSans.svg#OpenSans') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
-@font-face {
-    font-family: 'OpenSans-Light';
-    src: url('../fonts/OpenSans-Light/OpenSans-Light.eot') format('embedded-opentype'), url('../fonts/OpenSans-Light/OpenSans-Light.ttf')  format('truetype'), url('../fonts/OpenSans-Bold/OpenSans-Light.svg#OpenSans-Light') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSans-BoldItalic';
-    src: url('../fonts/OpenSans-BoldItalic/OpenSans-BoldItalic.eot') format('embedded-opentype'), url('../fonts/OpenSans-BoldItalic/OpenSans-BoldItalic.ttf')  format('truetype'), url('../fonts/OpenSans-BoldItalic/OpenSans-BoldItalic.svg#OpenSans-BoldItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSans-Italic';
-    src: url('../fonts/OpenSans-Italic/OpenSans-Italic.eot') format('embedded-opentype'), url('../fonts/OpenSans-Italic/OpenSans-Italic.ttf')  format('truetype'), url('../fonts/OpenSans-Italic/OpenSans-Italic.svg#OpenSans-Italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSansLight-Italic';
-    src: url('../fonts/OpenSansLight-Italic/OpenSansLight-Italic.eot') format('embedded-opentype'), url('../fonts/OpenSansLight-Italic/OpenSansLight-Italic.ttf')  format('truetype'), url('../fonts/OpenSansLight-Italic/OpenSansLight-Italic.svg#OpenSansLight-Italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     font-size: 100%;
   
     letter-spacing: 0.5px;
 }
 strong, h1, h2, h2, h3, h4, h5, h6{
-    font-family: 'OpenSans-Bold';
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*** CSS Rules for General elements **/
@@ -69,7 +25,7 @@ h3 {
 }
 body {
     color: #363436;
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a:visited, .alink:visited {
@@ -106,7 +62,11 @@ a, .alink {
     .header.panel > .header.links > li > a {
         color: #363436;
         font-size: 14px;
-        font-family: OpenSans;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    ul.header.links li img {
+        width: 70%;
     }
 
     ul.header.links {
@@ -118,7 +78,7 @@ a, .alink {
     }
 
     button.action.search img {
-        width: 100%;
+        width: 70%;
         margin-top: 12px;
     }
 
@@ -143,7 +103,7 @@ a, .alink {
     /** Section: Navigation **/
     .navigation {
         background: #fff;
-        font-weight: 350;
+        font-weight: 400;
         height: inherit;
         left: auto;
         overflow: inherit;
@@ -289,6 +249,12 @@ a, .alink {
     .promotional-blocks-insta li{
         width: 19%;
         display: inline-block;
+    }
+
+    /**Featured products homepage **/
+    .featured_products_sm {
+        /** Hide mobile featured products slider **/
+        display: none;
     }
 
     /**instagram section ***/
