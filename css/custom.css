@@ -198,9 +198,9 @@ a, .alink {
     }
     .slider-heading {
         position: absolute;
-        top: 10%;
+        top: 8%;
         text-align: center;
-        left: 40%;
+        left: 33%;
         color: #fff;
         font-size: 81px;
     }
@@ -485,6 +485,34 @@ li.social img {
     }
 
     /***  Mobile Slider CSS ends here***/
+
+    /*** 4 collections homepage ***/
+    .block-promo-wrapper.block-promo-hp {
+        padding: 0px 15px;
+    }
+
+    ul.promo-section {
+        text-align: center;
+        margin: 0px auto;
+        padding-left: 0px;
+        margin-top: 1.5rem;
+    }
+
+    /** 4 collections homepage css ends here **/
+
+    /** Three collections homepage **/
+    ul.promotional-blocks {
+        text-align: center;
+        margin: 0px auto;
+        padding: 0px 15px;
+    }
+
+    ul.promotional-blocks li {
+        text-align: center;
+    }
+    /** Three collections homepage ends here**/
+
+
     ol.product-items.widget-product-grid {
         text-align: center;
     }
@@ -499,25 +527,45 @@ li.social img {
     nav.navigation {
         display: none;
     }
-    /*** 4 collections homepage ***/
-    .block-promo-wrapper.block-promo-hp {
-        padding: 0px 15px;
-    }
 
-    ul.promo-section {
-        text-align: center;
-        margin: 0px auto;
-        padding-left: 0px;
-        margin-top: 1.5rem;
-    }
-
-    ul.promotional-blocks li {
-        text-align: center;
-    }
 
     .insta {
         text-align: center;
+
     }
+
+    /** hide desktop insta feed on mobile **/
+
+    ul.promotional-blocks-insta {
+        display: none;
+    }
+
+    /** featured products mobile **/
+    /* external css: flickity.css */
+
+    .carousel {
+      background: #EEE;
+    }
+
+    .carousel-cell {
+      width: 50%;
+      height: 200px;
+      margin-right: 10px;
+      background: #8C8;
+      border-radius: 5px;
+      counter-increment: gallery-cell;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+      text-align: center;
+      content: none;
+      line-height: 200px;
+      font-size: 80px;
+      color: white;
+    }
+
 
 
 }
