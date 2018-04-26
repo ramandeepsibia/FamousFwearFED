@@ -17,11 +17,31 @@
         <link rel="stylesheet" type="text/css" media="print" href="css/print.css">
         <link rel="stylesheet" type="text/css" media="all" href="css/custom.css">
 
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
         <!-- insert scripts here -->
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Javascript for slider -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
         <!-- scripts ends here -->
 
-        <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">           
+        <link rel="stylesheet" type="text/css" media="all" href="css/styles.css"> 
+
+        <script>
+            window.onload = function() {
+                if (window.jQuery) {  
+                    // jQuery is loaded  
+                    alert("Yeah!");
+                } else {
+                    // jQuery is not loaded
+                    alert("Doesn't Work");
+                }
+            }
+        </script>          
  
     </head>
     <body data-container="body" class="cms-home cms-index-index page-layout-1column" data-gr-c-s-loaded="true" style="">
@@ -77,12 +97,7 @@
                                             <span>Search</span>
                                         </label>
                                         <div class="control">
-                                            <input id="search" type="text" name="q" value="" placeholder="" class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off">
-                                            <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
-                                            <div class="nested">
-                                                <a class="action advanced" href="http://magento2-demo.nexcess.net/catalogsearch/advanced/" data-action="advanced-search">
-                                                Advanced Search    </a>
-                                            </div>
+                                            <input id="search" type="text" name="q" value="" placeholder="" class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off">                     
                                         </div>
                                     </div>
                                     <div class="actions">
@@ -104,6 +119,17 @@
                         <li><strong>FREE SHIPPING</strong> ON ORDERS OVER $89</li>
                         <li>BUY NOW | PAY LATER | AFTER PAY</li>
                     </ul>
+
+                    <!--- promotions slider mobile only -->
+                    <div class="promotions-slider-sm">
+                        <p class="item-1">BUY 2 TAKE 50% OFF THE 3RD</p>
+
+                        <p class="item-2"><strong>FREE SHIPPING</strong> ON ORDERS OVER $89</p>
+
+                        <p class="item-3">BUY NOW | PAY LATER | AFTER PAY</p>
+                    </div>
+                    <!-- promotions slider ends for mobile -->
+
                     
                     <img style="width:100%" src="images/HomeBanner.png" />
                     <div class="slider-heading">

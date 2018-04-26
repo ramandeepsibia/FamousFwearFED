@@ -163,6 +163,10 @@ a, .alink {
         margin: 0 0px 0 0;
     }
     /** Section: Promotions **/
+    .promotions-slider-sm {
+        /** hide promotions slider for mobile at desktop ***/
+        display:none; 
+    }
     .promotions li {
         width: 32%;
         display: inline-block;
@@ -405,6 +409,58 @@ li.social img {
 }
 @media (max-width: 768px){
     /** media queries for mobile **/
+
+    /*** promotions text slider mobile ***/
+    .promotions {
+        /** hide promotions for desktop at mobile ***/
+        display: none;
+    }
+
+    .item-1, 
+    .item-2, 
+    .item-3 {
+        position: absolute;
+        display: block;
+        top: 6em;
+
+        width: 100%;
+
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    .item-1{
+        animation-name: anim-1;
+    }
+
+    .item-2{
+        animation-name: anim-2;
+    }
+
+    .item-3{
+        animation-name: anim-3;
+    }
+
+    @keyframes anim-1 {
+        0%, 8.3% { left: -100%; opacity: 0; }
+      8.3%,25% { left: 25%; opacity: 1; }
+      33.33%, 100% { left: 110%; opacity: 0; }
+    }
+
+    @keyframes anim-2 {
+        0%, 33.33% { left: -100%; opacity: 0; }
+      41.63%, 58.29% { left: 25%; opacity: 1; }
+      66.66%, 100% { left: 110%; opacity: 0; }
+    }
+
+    @keyframes anim-3 {
+        0%, 66.66% { left: -100%; opacity: 0; }
+      74.96%, 91.62% { left: 25%; opacity: 1; }
+      100% { left: 110%; opacity: 0; }
+    }
+
+    /** promotions text slider mobile ends here ***/
     ol.product-items.widget-product-grid {
         text-align: center;
     }
@@ -431,4 +487,6 @@ li.social img {
     .insta {
         text-align: center;
     }
+
+
 }
