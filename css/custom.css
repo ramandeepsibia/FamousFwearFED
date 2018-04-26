@@ -191,13 +191,32 @@ a, .alink {
     }
 
     
+    /** Section: Slider ***/
+    .slider-sm {
+        /** hide mobile slider at desktop ***/
+        display: none;
+    }
+    .slider-heading {
+        position: absolute;
+        top: 10%;
+        text-align: center;
+        left: 40%;
+        color: #fff;
+        font-size: 81px;
+    }
+    .slider-btn{
+        background: none;
+        border: 0px;
+        outline: none!important;
+        box-shadow: none!important;
+        border-right: 2px solid #fff;
+        border-left: 2px solid #fff;
+        border-radius: 0px;
+        color: #fff;
+        font-size: 21px;
+    }
 
     /** Section: Top 4 Featured products Home Page **/
-
-    
-
-   
-
     .content-wrapper-home {
         padding-top: 2.5rem;
         width: 100%;
@@ -299,26 +318,6 @@ a, .alink {
     font-size: 14px;
 }
 
-/** Section: Slider ***/
-.slider-heading {
-    position: absolute;
-    top: 10%;
-    text-align: center;
-    left: 40%;
-    color: #fff;
-    font-size: 81px;
-}
-.slider-btn{
-    background: none;
-    border: 0px;
-    outline: none!important;
-    box-shadow: none!important;
-    border-right: 2px solid #fff;
-    border-left: 2px solid #fff;
-    border-radius: 0px;
-    color: #fff;
-    font-size: 21px;
-}
 /** Top 4 featured products homepage **/
 button.action.more {
     background: none;
@@ -416,12 +415,21 @@ li.social img {
         display: none;
     }
 
+    .promotions-slider-sm {
+        background: #000;
+        color: #fff;
+        /* border: 1px solid red; */
+        padding: 16px 10px;
+        margin-top: 0px;
+        /* padding-top: 0px; */
+    }
+
     .item-1, 
     .item-2, 
     .item-3 {
         position: absolute;
         display: block;
-        top: 6em;
+        top: 8em;
 
         width: 100%;
 
@@ -461,6 +469,22 @@ li.social img {
     }
 
     /** promotions text slider mobile ends here ***/
+
+    /*** Mobile Slider CSS ***/
+    .slider-desktop {
+        /** hide desktop slider **/
+        display: none;
+    }
+
+    .slider-heading-sm {
+        position: absolute;
+        top: 46%;
+        left: 16%;
+        text-align: center;
+        color:#fff;
+    }
+
+    /***  Mobile Slider CSS ends here***/
     ol.product-items.widget-product-grid {
         text-align: center;
     }
@@ -476,8 +500,15 @@ li.social img {
         display: none;
     }
     /*** 4 collections homepage ***/
-    ul.promo-section li {
-        display: none;
+    .block-promo-wrapper.block-promo-hp {
+        padding: 0px 15px;
+    }
+
+    ul.promo-section {
+        text-align: center;
+        margin: 0px auto;
+        padding-left: 0px;
+        margin-top: 1.5rem;
     }
 
     ul.promotional-blocks li {
